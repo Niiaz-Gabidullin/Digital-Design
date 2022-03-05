@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 1200px;
+}
+.header {
+  padding: 103px 0;
+  background-image: url(./img/image001.jpg);
+  background-size: cover;
+  background-position: 0%;
+  display: flex;
+  position: relative;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+@media(max-width:1200px){
+  .container{
+    max-width: 970px;
+  }
+}
+@media(max-width:992px){
+  .container{
+    max-width: 750px;
+  }
+}
+@media(max-width:767px){s
+  .container{
+    max-width: none;
+  }
+}
+.top__container {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+hr {
+  width: 1170px;
+}
+.date {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 250px;
+  color: rgb(26, 4, 107);
+}
+
+.article {
+  margin: 0 auto;
+  width: 1200px;
+}
+.menu {
+  display: flex;
+  list-style-type: none;
+
+}
+.menu li a {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 40px;
+  text-decoration: none;
+  color: rgb(26, 4, 107);
+}
+.menu li a:hover {
+  cursor: pointer;
+  color: #fff;
+}
+.title {
+  color: #343434;
+  /* background-color: rgb(131, 213, 228); */
+  font-weight: normal;
+  font-family: "Ultra", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-shadow: 0 2px white, 0 3px #777;
+}
+.subtitle {
+  font-weight: normal;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.6);
+  font-size: 28px;
+  line-height: 40px;
+  background: #355681;
+  background: rgba(53, 86, 129, 0.8);
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 0 10px 0 10px;
+  box-shadow: inset 0 0 5px rgba(53, 86, 129, 0.5);
+  font-family: "Muli", sans-serif;
+}
+.desc {
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #788699;
+  font-family: "Muli", sans-serif;
+}
+.headline {
+  font-size: 25px;
+  line-height: 20px;
+  font-family: "Titillium Web", sans-serif;
+  color: #4a5b72;
+}
+.lead {
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #788699;
+  font-family: "Muli", sans-serif;
+}
+.img {
+  width: 1349px;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.block {
+  width: 480px;
+}
+.picture {
+  cursor: pointer;
+  width: 480px;
+  height: 270px;
+  margin-bottom: 10px;
+}
+.about {
+  background-image: url(./img/galaxy.jpg);
+}
+.description {
+  text-align: justify;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  line-height: 1.4;
+  background-color: white;
+}
+.caption {
+  font-size: 40px;
+  line-height: 20px;
+}
+.list {
+  margin: 0 auto;
+  width: 1170px;
+}
+.items {
+  counter-reset: li;
+  list-style: none;
+  font: 25px "Trebuchet MS", "Lucida Sans";
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.items a {
+  position: relative;
+  display: block;
+  padding: 0.4em 0.4em 0.4em 2em;
+  margin: 0.5em 0;
+  background: #dad2ca;
+  color: #444;
+  text-decoration: none;
+  border-radius: 0.3em;
+  transition: 0.3s ease-out;
+}
+.items a:hover {
+  cursor: pointer;
+  background: #e9e4e0;
+}
+.items a:hover:before {
+  transform: rotate(360deg);
+}
+.items a:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #8fd4c1;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: 0.3em solid white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all 0.3s ease-out;
+}
+.footer {
+  height: 127px;
+  background-color: rgb(73, 151, 156);
+}
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.slogan {
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #353b44;
+  font-family: "Muli", sans-serif;
+}
+.list_items {
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #353b44;
+  font-family: "Muli", sans-serif;
+}
+.item {
+  padding-bottom: 10px;
+}
+.div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.up_btn {
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  font-size: 20px;
+  color: #362c55;
+  width: 150px;
+  padding: 20px;
+}
+#top{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
